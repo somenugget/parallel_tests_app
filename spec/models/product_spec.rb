@@ -9,6 +9,20 @@ RSpec.describe Product, type: :model do
 
       expect(10).to be_positive
     end
+    it 'is long' do
+      1000.times do |i|
+        Product.create(name: 'Product', price: 10)
+      end
+
+      expect(10).to be_positive
+    end
+    it 'is long' do
+      1000.times do |i|
+        Product.create(name: 'Product', price: 10)
+      end
+
+      expect(10).to be_positive
+    end
   end
 
   describe 'quantity methods' do
