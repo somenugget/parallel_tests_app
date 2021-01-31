@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root 'products#index'
+
+  resources :order_products
+  resources :orders
+  resources :product_quantities
+  resources :warehouses
+  resources :products
 end
